@@ -1,6 +1,10 @@
 Assume name of tables is plural of class name (What EF does)
 use [Table("tbl course", Schema = "Catalogue")]
+if the schema is not default
 
 col names are same as properties
 use [Column("sName", TypeName = "varchar")]
 This will chance the name to sName and the type to varchar (rather than nvarchar)
+
+other examples follow a similar notation (Primary key etc....)
+for composite keys, add [key] to both properties
