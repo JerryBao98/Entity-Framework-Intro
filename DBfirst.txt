@@ -3,3 +3,12 @@ add, ado entity data model (This is the conceptual model)
 Choose et designer from DB (you already have a db)
 
 choose ms sqlserver as the connecion
+
+edmx will store the entity data model, you will find all designer generated code
+Here, dbcontext is an abstraction over the database (provides an api to load data)
+
+The dbset will present the tables in the db (generated code)
+
+BlogmodelTemplate: 
+	you will find the class of the table you made. 	
+	properties will be equal to the columns of the db
