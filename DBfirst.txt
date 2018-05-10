@@ -5,6 +5,9 @@ Choose et designer from DB (you already have a db)
 choose ms sqlserver as the connecion
 
 edmx will store the entity data model, you will find all designer generated code
+looking at the actual file is the same as the SM database diagram, this is just a graphical 
+representation of the tables.
+
 Here, dbcontext is an abstraction over the database (provides an api to load data)
 
 The dbset will present the tables in the db (generated code)
@@ -12,3 +15,10 @@ The dbset will present the tables in the db (generated code)
 BlogmodelTemplate: 
 	you will find the class of the table you made. 	
 	properties will be equal to the columns of the db
+
+intial catalogue is the name of the Db you wish to connect to
+add migration specifies the type of change you made to the Db via your code, 
+the migrations will contain the changes as part of up() and down(), each of which 
+will upgrade and downgrade the database.
+
+update-database will run the commands in the migration 
