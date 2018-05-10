@@ -1,0 +1,5 @@
+Create the solution, right click, 
+add, ado entity data model (This is the conceptual model)
+Choose et designer from DB (you already have a db)
+
+choose ms sqlserver as the connecion
