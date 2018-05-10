@@ -15,7 +15,7 @@ use modelbuilder.Entity<name>()
 .IsRequired();
 
 add the migration
-
+fluentAPI is a better choice (easier to view, without SQL knowledge)
 
 
 
