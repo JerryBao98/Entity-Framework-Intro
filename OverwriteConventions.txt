@@ -1,0 +1,24 @@
+Intro to overwriting entity framework's conventions
+
+How to overwrite the string nullible:
+open the class
+apply to the property 
+[Required]
+This makes the column non nullible
+add-migration 
+
+How to achieve the same result usign fluent API (delete the migration to revert the change)
+You can do this so long you dont commit to the db
+Go to the Db context
+use modelbuilder.Entity<name>()
+.Property(t => t.description)
+.IsRequired();
+
+add the migration
+
+
+
+
+
+
+
