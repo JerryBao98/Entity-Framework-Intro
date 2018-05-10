@@ -8,3 +8,33 @@ This will chance the name to sName and the type to varchar (rather than nvarchar
 
 other examples follow a similar notation (Primary key etc....)
 for composite keys, add [key] to both properties
+[Required]
+
+Len of strings:
+EF assumes the len is MAX
+[MaxLength(255)]
+
+index:
+[Index("Name of index", Order(1,2,3...), IsUnique = True)]
+Creates a unique index
+
+foreign keys:
+Link the columns, one which relies on the other. Apply foreignkey attributes and specify the navigation prooperty
+Refer to the course
+
+
+How to actually apply these changes:
+Look to the pluto model for a clear example. 
+enable-migrations
+create a migration based on your current model. 
+Add the changes to Course.cs
+
+
+
+
+
+
+
+
+
+
